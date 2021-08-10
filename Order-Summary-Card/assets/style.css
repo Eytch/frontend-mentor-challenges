@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --pruple: #746DEF;
+    --Verypale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;    
+    background-color: var(--Pale-blue);
+    background-image: url(/Order-Summary-Card/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main  {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    text-align: center;    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.header-title{
+    font-weight: 900;
+    align-items: center;
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: var(--Dark-blue);
+}
+.parag {
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    margin: 25px 75px;
+}
+
+.plan{
+    background-color: var(--Verypale-blue) ;
+    padding: 20px 25px 20px 25px;
+    border-radius: 15px;
+    display: grid;
+    width: 380px;
+    grid-template-columns: 70px 100px 70px;
+}
+
+.info{
+    text-align: left;
+}
+
+.plan-title{
+    font-weight: 900;
+}
+
+.plan-price{
+    color: var(--Desaturated-blue);
+    font-weight: 200;
+}
+.plan-change{
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--Bright-blue);
+}
+.plan-change:hover{
+    color: var(--pruple);
+    text-decoration: none;
+}
+
+.buttons{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay{
+    text-decoration: none;
+    background-color: var(--Bright-blue);
+    padding: 20px 120px 20px 120px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-top: 70px;
+    color: var(--Pale-blue);
+    box-shadow: 0px 10px 15px rgba(52, 10, 56, 0.253);
+    font-weight: 600;
+}
+
+.pay:hover{
+    background-color: var(--pruple);
+}
+
+.cancel{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+.attribution {
+    font-size: 16px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .main  {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;    
+    }
+
+    .card{
+        width: 95%;
+    }
+    .header img{
+        width: 100%;
+    }
+    .parag {
+        margin: 15px 25px;
+    }
+    .plan{
+        background-color: var(--Verypale-blue) ;
+        padding: 20px 25px 20px 25px;
+        border-radius: 15px;
+        display: grid;
+        width: 280px;
+        grid-template-columns: 70px 100px 70px;
+    }
+    .plan-change{
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--Bright-blue);
+    }
+    .pay{
+        padding: 15px 60px 15px 60px;
+    }
+  }
