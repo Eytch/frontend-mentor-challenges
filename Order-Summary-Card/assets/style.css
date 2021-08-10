@@ -59,13 +59,17 @@ body{
     background-color: var(--Verypale-blue) ;
     padding: 20px 25px 20px 25px;
     border-radius: 15px;
-    display: grid;
+    display: flex;
     width: 380px;
-    grid-template-columns: 70px 100px 70px;
 }
 
 .info{
+    flex:2;
     text-align: left;
+}
+
+.plan-icon{
+    flex:1;
 }
 
 .plan-title{
@@ -76,8 +80,10 @@ body{
     color: var(--Desaturated-blue);
     font-weight: 200;
 }
+.change{
+    flex:1;
+}
 .plan-change{
-    margin-left: 80px;
     font-weight: 600;
     font-size: 14px;
     color: var(--Bright-blue);
@@ -167,5 +173,3 @@ body{
         padding: 15px 60px 15px 60px;
     }
   }
-
-  
